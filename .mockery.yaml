@@ -1,0 +1,8 @@
+with-expecter: True
+dir: mocks
+mockname: "{{ .InterfaceName }}"
+outpkg: "mocks"
+filename: "{{ .InterfaceName | snakecase }}.go"
+include-regex: '[A-Z].*Client$'
+packages:
+  github.com/peteclay/nullable-pb:

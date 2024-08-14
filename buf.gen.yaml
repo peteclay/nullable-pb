@@ -1,0 +1,21 @@
+version: v1
+plugins:
+  - name: go-patch
+    out: .
+    opt:
+      - plugin=go
+      - module=github.com/peteclay/nullable-pb
+  - name: go-patch
+    out: .
+    opt:
+      - plugin=go-grpc
+      - module=github.com/peteclay/nullable-pb
+  - name: go-patch
+    out: .
+    opt:
+      - plugin=go-vtproto
+      - module=github.com/peteclay/nullable-pb
+      - features=size+marshal+unmarshal+pool
+  - name: doc
+    out: .
+    opt: "markdown,README.md"

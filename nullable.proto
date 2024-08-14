@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+package nullable;
+
+import "google/protobuf/struct.proto";
+import "google/protobuf/timestamp.proto";
+import "patch/go.proto";
+
+option go_package = "github.com/peteclay/nullable-pb;nullablepb";
+
+message NullableDate {
+  oneof value_or_null {
+    google.protobuf.Timestamp date_value = 1;
+    google.protobuf.NullValue null_value = 2;
+  }
+}
+
+message NullableBool {
+  oneof value_or_null {
+    bool bool_value = 1;
+    google.protobuf.NullValue null_value = 2;
+  }
+}
+
+message NullableString {
+  oneof value_or_null {
+    string string_value = 1;
+    google.protobuf.NullValue null_value = 2;
+  }
+}
