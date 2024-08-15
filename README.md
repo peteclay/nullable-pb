@@ -3,7 +3,7 @@
 
 ## Table of Contents
 
-- [nullable.proto](#nullable-proto)
+- [nullable/nullable.proto](#nullable_nullable-proto)
     - [NullableBool](#nullable-NullableBool)
     - [NullableDate](#nullable-NullableDate)
     - [NullableString](#nullable-NullableString)
@@ -12,10 +12,10 @@
 
 
 
-<a name="nullable-proto"></a>
+<a name="nullable_nullable-proto"></a>
 <p align="right"><a href="#top">Top</a></p>
 
-## nullable.proto
+## nullable/nullable.proto
 
 
 
