@@ -4,7 +4,6 @@ package nullable;
 
 import "google/protobuf/struct.proto";
 import "google/protobuf/timestamp.proto";
-import "patch/go.proto";
 
 option go_package = "github.com/peteclay/nullable-pb;nullablepb";
 

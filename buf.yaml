@@ -1,7 +1,5 @@
 version: v2
 name: buf.build/peteclay/nullable
-deps:
-  - buf.build/nvxx/protopatch
 lint:
   use:
     - DEFAULT
